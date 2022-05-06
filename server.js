@@ -11,5 +11,4 @@
         fetchKey().then((key) => {
             censApi = key.apiKey;
         });
-      
-    
+
