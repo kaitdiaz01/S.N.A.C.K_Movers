@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS moving_db;
+
+CREATE DATABASE moving_db;
