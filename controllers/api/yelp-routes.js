@@ -1,4 +1,4 @@
-yelpBaseURL = 'https://api.yelp.com/v3/businesses/search?'
+yelpBaseURL = 'https://api.yelp.com/v3/businesses/search?';
 yelpBearer;
 
 let yelpClientId = 
