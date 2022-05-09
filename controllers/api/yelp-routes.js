@@ -1,3 +1,6 @@
+yelpBaseURL = 'https://api.yelp.com/v3/businesses/search?'
+yelpBearer;
+
 let yelpClientId = 
 // This calls the API, just update the url to have your key's name.
  async function fetchKey() {
@@ -8,7 +11,7 @@ let yelpClientId =
 }
 // Call this wherever you need your key.
 fetchKey().then((key) => {
-    secretKey = key.apiKey;
+    yelpBearer = key.apiKey;
     console.log(secretKey);
 });
 
@@ -25,3 +28,6 @@ fetchKey().then((key) => {
     secretKey = key.apiKey;
     console.log(secretKey);
 });
+
+
+
