@@ -1,0 +1,25 @@
+const basicAutocomplete = document.querySelector('#basic');
+// insert school, place, etc data
+const data = ['Museum', 'Party', 'Restaurant', 'Concert', 'Architecture'];
+const dataFilter = (value) => {
+  return data.filter((item) => {
+    return item.toLowerCase().startsWith(value.toLowerCase());
+  });
+};
+
+new mdb.Autocomplete(basicAutocomplete, {
+  filter: dataFilter
+});
+
+const locationAutocomplete = document.querySelector('#location');
+// location data goes here
+const dataL = [];
+const dataFilterL = (value) => {
+  return dataL.filter((item) => {
+    return item.toLowerCase().startsWith(value.toLowerCase());
+  });
+};
+
+new mdb.Autocomplete(locationAutocomplete, {
+  filter: dataFilterL
+});
