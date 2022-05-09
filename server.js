@@ -1,3 +1,6 @@
+
+const helpers = require('./utils/apiCalls.js')
+
 const express = require('express');
 const routes = require('./routes');
 const sequelize = require('./config/connection');
@@ -15,3 +18,4 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
+
