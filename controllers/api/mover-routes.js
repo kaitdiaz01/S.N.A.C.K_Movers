@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { Movers } = require("../../models");
 
+
 router.get("/", async (req, res) => {
   try {
     const moverData = await Movers.findAll();
