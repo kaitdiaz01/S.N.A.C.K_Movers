@@ -6,13 +6,16 @@ class Movers extends Model{}
 Movers.init(
     {
         name: {
-
+          type: DataTypes.STRING,
+          allowNull: false,
         },
         website: {
-
+          type: DataTypes.STRING,
         },
         rating: {
-
+          type: DataTypes.DECIMAL,
+          allowNull: false,
+          isDecimal: true,
         },
         image: {
 
