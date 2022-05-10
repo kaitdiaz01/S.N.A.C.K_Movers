@@ -19,3 +19,9 @@ body,
   border: solid 2pt blue;
 
 }
+
+.bg-image {
+  object-fit: cover;
+  width: 100%; 
+  height: 50%;
+}
