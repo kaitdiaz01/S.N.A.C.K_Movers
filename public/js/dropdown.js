@@ -23,3 +23,16 @@ const dataFilterL = (value) => {
 new mdb.Autocomplete(locationAutocomplete, {
   filter: dataFilterL
 });
+
+ document.querySelector('#location').addEventListener(e => {
+ const userLocation = document.querySelector('#form2').value
+ console.log(userLocation);
+ fetch('/api/movers/' + userLocation)
+ .then(function (response) {
+   
+   return response.json();
+ })
+ .then(function (data) {
+   console.log(data);
+ })
+})

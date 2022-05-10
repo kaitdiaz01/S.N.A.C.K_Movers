@@ -18,6 +18,7 @@ Movers.init(
           isDecimal: true,
         },
         image: {
+          type: DataTypes.STRING
 
         }
     },
