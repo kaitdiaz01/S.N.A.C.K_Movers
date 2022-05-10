@@ -1,5 +1,5 @@
 
-const helpers = require('./utils/apiCalls.js')
+const helpers = require('./utils/apiCalls')
 
 const express = require('express');
 const routes = require('./routes');
