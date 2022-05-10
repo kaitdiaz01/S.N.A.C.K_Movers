@@ -19,7 +19,36 @@
             <div class="container-fluid">
               <a class="navbar-brand text-white">S.N.A.C.K Movers Logo</a>
               <form class="d-flex">
-                <button class="btn btn-outline-light" type="login">Login</button>
+                 <!-- Button trigger modal -->
+                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Login
+                  </button>
+              <!-- START OF MODAL -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Login Information</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <ul>
+                            <ol>Email:
+                            <input class="loginEmail" id="email-login" placeholder="Input email address">
+                            </ol>
+                            <ol>Password:
+                            <input class="loginPassword" id="password-login" placeholder="Input password">
+                            </ol>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Login</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- END OF MODAL -->
                 <button class="btn btn-outline-light" type="logout">Logout</button>
               </form>
             </div>
