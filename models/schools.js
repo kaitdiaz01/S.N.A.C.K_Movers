@@ -13,8 +13,8 @@ Schools.init(
 
         },
         rating: {
-          type: DataTypes.INTEGER
-
+          type: DataTypes.INTEGER,
+          allowNull: false
         },
         image: {
           type: DataTypes.STRING
