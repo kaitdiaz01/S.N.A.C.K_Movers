@@ -11,28 +11,18 @@ greatSchoolsBaseURL = "https://gs-api.greatschools.org/schools?limit=20&";
 
 module.exports = {
   getMovers: (loc) => {
-    return axios
-      .get(yelpBaseURL + "term=movers&location=" + loc, {
-        headers: {
-          Authorization: "Bearer " + process.env.YELP_API_SECRET, //the token is a variable which holds the token
-        },
-      })
-      
+    return axios.get(yelpBaseURL + "term=movers&location=" + loc, {
+      headers: {
+        Authorization: "Bearer " + process.env.YELP_API_SECRET, //the token is a variable which holds the token
+      },
+    });
   },
   getSchools: (zipCode) => {
-    axios
-      .get(greatSchoolsBaseURL + "zip=" + zipCode, {
-        headers: {
-          "X-API-Key": process.env.SCHOOL_API,
-        },
-      })
-      .then((data) => {
-        console.log(data.data);
-        return data.data;
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    return axios.get(greatSchoolsBaseURL + "zip=" + zipCode, {
+      headers: {
+        "X-API-Key": process.env.SCHOOL_API,
+      },
+    });
   },
   getEconomics: () => {
     axios.get(economicsBaseUrl).then((data) => {
