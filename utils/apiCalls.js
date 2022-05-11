@@ -22,6 +22,7 @@ module.exports = {
       headers: {
         "X-API-Key": process.env.SCHOOL_API,
       },
+      
     });
   },
   getEconomics: () => {
