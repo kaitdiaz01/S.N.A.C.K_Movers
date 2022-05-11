@@ -16,7 +16,7 @@ body,
 
 .card-body {
   height: 150pt;
-  border: solid 2pt blue;
+  border: solid 2pt rgb(132, 132, 186);
 
 }
 
