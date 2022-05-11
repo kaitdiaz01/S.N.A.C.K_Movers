@@ -14,14 +14,17 @@ body,
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
 
-.card-body {
-  height: 150pt;
+.card {
   border: solid 2pt rgb(132, 132, 186);
-
+  border-radius: 10px;
 }
 
 .bg-image {
   object-fit: cover;
   width: 100%; 
   height: 50%;
+}
+
+.navbar {
+  border-bottom: solid 2pt rgb(132, 132, 186);
 }
