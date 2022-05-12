@@ -9,7 +9,7 @@ Census.init(
           type: DataTypes.INTEGER,
           allowNull: false,
         },
-        medianHouseholdIncome: {
+        medianIncome: {
           type: DataTypes.INTEGER,
           allowNull: false,
         },
