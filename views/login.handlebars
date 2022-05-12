@@ -1,16 +1,17 @@
-<div class="row d-flex justify-content-around bg-primary vh-100 ">
+<div class="row d-flex justify-content-around vh-100" style="background-image: url(../images/login.png); ">
+ 
   {{!-- LOGIN FORM --}}
-  <div class="col-md-4 rounded border bg-white mt-5" style="height: 300pt">
-    <h2 class="mb-4 mt-4">LOGIN</h2>
+  <div class="col-md-4 rounded bg-dark mt-5" style="height: 300pt; opacity:85%">
+    <h2 class="mb-4 mt-4 text-white">LOGIN</h2>
   
     <form class="form login-form m-10 justify-content-center">
       <div class="form-group">
-        <label class="form-label" for="email-login">Email:</label>
+        <label class="form-label text-white" for="email-login">Email:</label>
         <input class="form-input form-control" type="text" id="email-login" placeholder="Your email..."/>
       </div>
       <br>
       <div class="form-group">
-        <label class="form-label" for="password-login">Password:</label>
+        <label class="form-label text-white" for="password-login">Password:</label>
         <input class="form-input form-control" type="password" id="password-login" placeholder="Your password..."/>
       </div>
       <br>
@@ -20,17 +21,17 @@
     </form>
   </div>
 {{!-- SIGN UP FORM --}}
-  <div class="col-md-4 rounded border bg-white mt-5" style="height: 300pt">
-    <h2 class="mb-4 mt-4">CREATE AN ACCOUNT</h2>
+  <div class="col-md-4 rounded bg-dark mt-5" style="height: 300pt; opacity:85%">
+    <h2 class="mb-4 mt-4 text-white">CREATE AN ACCOUNT</h2>
 
     <form class="form signup-form">
       <div class="form-group">
-        <label class="form-label" for="email-signup">Email:</label>
+        <label class="form-label text-white" for="email-signup">Email:</label>
         <input class="form-input form-control" type="text" id="email-signup" placeholder="Your email..." />
       </div>
       <br>
       <div class="form-group">
-        <label class="form-label" for="password-signup">Password:</label>
+        <label class="form-label text-white" for="password-signup">Password:</label>
         <input class="form-input form-control" type="password" id="password-signup" placeholder="Your password..."/>
       </div>
       <br>
@@ -39,7 +40,9 @@
       </div>
     </form>
   </div>
+   {{!-- <img src="../images/image3.png" class="rounded d-block" style="height: 200px; width: 200px;" > --}}
 </div>
+
 
 <script src="../../js/login.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
