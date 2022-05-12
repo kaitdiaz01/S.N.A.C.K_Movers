@@ -1,5 +1,5 @@
 const User = require('./User.js');
-const Hotels = require('./Hotels.js');
+const Hotels = require('./Hotels')
 const Movers = require('./Movers.js');
 const Schools = require('./Schools.js');
 const Census = require('./Census.js');
