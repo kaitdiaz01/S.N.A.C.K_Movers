@@ -1,5 +1,4 @@
 const router = require('express').Router();
-// const censusRoutes = require('./census-routes');
 const userRoutes = require('./userRoutes.js');
 // const economicRoutes = require('./economics-routes');
 const schoolRoutes = require('./school-routes');
@@ -8,7 +7,7 @@ const categoriesRoutes = require('./categories-routes');
 const censusRoutes = require('./census-routes.js')
 
 
-// router.use('/census', censusRoutes);
+
 // router.use('/economic', economicRoutes);
 router.use('/categories', categoriesRoutes);
 router.use('/schools', schoolRoutes);

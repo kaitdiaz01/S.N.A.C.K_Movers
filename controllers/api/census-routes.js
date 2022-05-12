@@ -2,21 +2,19 @@ const router = require("express").Router();
 const { Census } = require("../../models");
 const API = require("../../utils/apiCalls");
 
-router.get("/:state","/:zip", (req, res) => {
-  API.getCensus(req.params.state, req.params.zip)
+
+router.get("/:zip/:state", (req, res) => {
+  API.getCensus(req.params.zip, req.params.state)
     .then((data) => {
-        res.send(data.data[1][1]);
-        console.log(data);
+      // res.send(data.data[1][1]);
+      console.log('hello');
+      console.log(data.data[1][1]);
 
     })
     .catch(function (error) {
       // handle error
       console.log(error);
     });
- 
-  
-
-
 });
 
 module.exports = router;
