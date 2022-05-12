@@ -1,14 +1,11 @@
-const locationEl = document.getElementById("location");
 const zip = document.getElementById("zipcode");
+const schoolButtonEl = document.getElementById("school-button")
 
 
 
-
-
-locationEl.addEventListener("click", (event) => {
+schoolButtonEl.addEventListener("click", (event) => {
   event.preventDefault();
   console.log('clciked on button to go to comapnies');
-  // window.location.replace("/api/schools/" + zip.value);
+  window.location.replace("/api/schools/"  +33027);
 });
-
 
