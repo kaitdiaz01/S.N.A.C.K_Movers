@@ -4,11 +4,13 @@ const userRoutes = require('./userRoutes.js');
 // const economicRoutes = require('./economics-routes');
 const schoolRoutes = require('./school-routes');
 const moverRoutes = require('./mover-routes.js');
+const censusRoutes = require('./census-routes.js')
 
 // router.use('/census', censusRoutes);
 // router.use('/economic', economicRoutes);
 router.use('/schools', schoolRoutes);
 router.use('/movers', moverRoutes);
 router.use('/users', userRoutes);
+router.use('/census', censusRoutes)
 
 module.exports = router;
