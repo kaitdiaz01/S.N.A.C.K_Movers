@@ -9,7 +9,7 @@ locationEl.addEventListener("click", (event) => {
   document.location.replace("/categories");
 });
 
-userinputZip.innerHTML = '12234';
+
 
 
 
