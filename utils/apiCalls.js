@@ -19,6 +19,14 @@ module.exports = {
       },
     });
   },
+  getHotels: (loc) =>{
+    return axios.get(yelpBaseURL+"term=hotels&location=" + loc, {
+      headers: {
+        Authorization: "Bearer " + process.env.YELP_API_SECRET,
+      },
+    });
+  },
+  
   getSchools: (zipCode) => {
     return axios.get(greatSchoolsBaseURL + "zip=" + zipCode, {
       headers: {
