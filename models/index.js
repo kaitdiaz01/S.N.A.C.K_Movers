@@ -1,8 +1,8 @@
 const User = require('./User');
-const Hotels = require('./Hotels');
-const Movers = require('./Movers');
-const Schools = require('./Schools');
-const Census = require('./Census');
+const Hotels = require('./hotels');
+const Movers = require('./movers');
+const Schools = require('./schools');
+const Census = require('./census');
 const Categories = require('./categories')
 
 User.hasMany(Hotels, {
