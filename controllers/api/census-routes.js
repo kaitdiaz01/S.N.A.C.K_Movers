@@ -6,8 +6,8 @@ router.get("/:zip/:state", (req, res) => {
   API.getCensus(req.params.zip, req.params.state)
     .then((data) => {
       // res.send(data.data[1][1]);
-      console.log('hello');
-      console.log(data.data[1][1]);
+      const census = data.data[1][1];
+      res.render("categories", { census });
     })
     .catch(function (error) {
       // handle error
