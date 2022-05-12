@@ -52,7 +52,7 @@ Our true triumph was getting all of our selected API data to run smoothly when c
 [Live Link to PowerPoint](https://docs.google.com/presentation/d/1vxeFfPbKpidwFww4B79Gf9ixR28NOhGh-aykUJsvzUk/edit#slide=id.g129b2805a28_0_84)
 
 # Run the program
-<!-- In order to start the program run `npm install` in your terminal. -->
+In order to start the program run `npm install` in your terminal.
 
 # Heroku Link
 
