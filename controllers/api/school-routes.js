@@ -9,11 +9,6 @@ router.get("/:zip", withAuth, (req, res) => {
     .then((data) => {
       const companies = data.data.schools;
       res.render("companies", { companies });
-      // let name = data.data.schools.forEach((element) => {
-      //     console.log(`${element.name} and ${element.rating}`);
-      // console.log(element.summary);
-      // console.log(element.web-site);
-      // console.log(element.overview-url);
     })
     .catch(function (error) {
       console.log(error);

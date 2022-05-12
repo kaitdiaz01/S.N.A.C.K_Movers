@@ -7,10 +7,7 @@ router.get("/:zip", (req, res) => {
     .then((data) => {
         res.send(data.data.businesses);
         console.log(data);
-      // data.data.businesses.forEach((element) => {
-      // console.log(
-      //   `${element.name} with a rating of ${element.rating} from ${element.review_count} reviews`
-      // );
+   
     })
     .catch(function (error) {
       // handle error
