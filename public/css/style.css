@@ -28,3 +28,8 @@ body,
 .navbar {
   border-bottom: solid 2pt rgb(132, 132, 186);
 }
+
+.mask {
+  object-fit: cover;
+}
+
