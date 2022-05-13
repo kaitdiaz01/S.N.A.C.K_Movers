@@ -56,7 +56,7 @@ In order to start the program run `npm install` in your terminal.
 
 # Heroku Link
 
-Heroku.com
+[Live Link to App](https://fast-tundra-37022.herokuapp.com/)
 
 # Acknowledgements
 
